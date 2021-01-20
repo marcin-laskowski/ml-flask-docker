@@ -1,17 +1,30 @@
-# ALexNet Image Classifier
-[![PyTorch](https://img.shields.io/badge/Framework-PyTorch-79FFE1)](https://pytorch.org)
-![Computer Vision](https://img.shields.io/badge/Type-Computer%20Vision-79FFE1)
+[![syndicai-banner](https://raw.githubusercontent.com/syndicai/brand/main/banner/banner_ddi.png)](https://syndicai.co)
 
-The reading comprehension model is able to answer question-based on the provided text. 
+The repository for the artcile [*Deploy ML model using Flask, Docker, and Cloud Run*](https://syndicai.co/blog/deploy-ml-with-flask) where you will learn a step-by-step tutorial on how to deploy a PyTorch implementation of the [AlexNet Image classifier](https://github.com/syndicai/models/tree/master/pytorch/image_classifier). 
 
+## Repo
+```bash
+.
+├── app.py                      > main flask app
+├── docker-compose.yaml
+├── Dockerfile
+├── README.md
+├── requirements.txt            > dependencies
+├── sample_data
+│   ├── input.jpg               > sample input image
+│   └── sample_input.json       > JSON with sample input url
+└── syndicai.py                 > file needed to deploy via Syndicai Platform
+```
 
-## Deploy 
-Click a button to deploy a model with [Syndicai](https://syndicai.co).
+## Prerequisites
+- Basic understanding of Python, Docker, REST
+- Access to Google Cloud Platform (if you want to host a model)
+- Trained model from the repository.
+- Installed docker, docker-compose, gcloud, python 3.6
+- Installed all python dependencies listed below. torch==1.7.1 torchvision==0.8.- 2 flask==1.1.2 requests==2.18.4
 
-[![Syndicai-Deploy](https://raw.githubusercontent.com/syndicai/brand/main/button/deploy.svg)](https://app.syndicai.co/newModel?repository=https://github.com/syndicai/models/tree/master/pytorch/image_classifier)
+## Contribute
+If you found that material helpful, or have some questions, please let us know via [mail](mailto:hello@syndicai.co) or [slack](https://join.slack.com/t/syndicai/shared_invite/zt-eqbfjmyo-BCNw0gDryzU1A_6GH7xyYw).
 
-
-## Example
-| input | output |
-| --- | --- |
-| <img src="sample_data/input.jpg" width="410"> | `hotdog` |
+---
+built with passion by [Syndicai](https://syndicai.co/).
